@@ -1,2 +1,1 @@
-# Package 📦 apps.retail.views
-
+# Package 📦 apps.myname.views

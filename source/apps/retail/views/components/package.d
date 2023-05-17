@@ -1,1 +1,1 @@
-module apps.retail.views.components;
+module apps.myname.views.components;

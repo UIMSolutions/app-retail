@@ -1,2 +1,2 @@
-# Package 📦 apps.retail.views.components
+# Package 📦 apps.myname.views.components
 
