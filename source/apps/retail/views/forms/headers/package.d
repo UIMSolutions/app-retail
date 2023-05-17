@@ -1,2 +1,2 @@
-module apps.myname.views.forms.headers;
+module apps.retail.views.forms.headers;
 
