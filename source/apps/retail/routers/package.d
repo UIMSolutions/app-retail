@@ -1,1 +1,1 @@
-module apps.retail.routers;
+module apps.myname.routers;

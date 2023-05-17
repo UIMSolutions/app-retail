@@ -1,1 +1,1 @@
-# Package 📦 apps.retail.helpers
+# Package 📦 apps.myname.helpers

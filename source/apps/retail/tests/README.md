@@ -1,1 +1,1 @@
-# Package 📦 apps.retail.tests
+# Package 📦 apps.myname.tests

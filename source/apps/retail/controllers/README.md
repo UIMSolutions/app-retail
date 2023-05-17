@@ -1,2 +1,1 @@
-# Package 📦 apps.retail.controllers
-
+# Package 📦 apps.myname.controllers

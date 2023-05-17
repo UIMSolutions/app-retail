@@ -1,1 +1,1 @@
-module apps.retail.controllers.components;
+module apps.myname.controllers.components;

@@ -1,1 +1,1 @@
-# Package 📦 apps.retail.routers
+# Package 📦 apps.myname.routers

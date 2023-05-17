@@ -1,1 +1,1 @@
-module apps.retail.tests;
+module apps.myname.tests;
