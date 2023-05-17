@@ -3,16 +3,16 @@ module apps.retail.views.index;
 import apps.retail;
 @safe:
 
-class DRETAILIndexView : DView {
-  mixin(ViewThis!("RETAILIndexView"));
+class DRTLIndexView : DView {
+  mixin(ViewThis!("RTLIndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DRETAILIndexView~":DRETAILIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DRTLIndexView~":DRTLIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
-      H5Div("APP retail -> Error")
+      H5Div("APP Retail -> Error")
     ].toH5;
   }
 }
-mixin(ViewCalls!("RETAILIndexView"));
+mixin(ViewCalls!("RTLIndexView"));

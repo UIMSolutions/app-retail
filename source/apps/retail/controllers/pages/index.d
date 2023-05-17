@@ -3,14 +3,14 @@ module apps.retail.controllers.pages.index;
 import apps.retail;
 @safe:
 
-class DRETAILIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("RETAILIndexPageController"));
+class DRTLIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("RTLIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(RETAILIndexView(this));
+      .view(RTLIndexView(this));
   }
 }
-mixin(ControllerCalls!("RETAILIndexPageController"));
+mixin(ControllerCalls!("RTLIndexPageController"));

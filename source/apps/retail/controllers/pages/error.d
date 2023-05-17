@@ -3,14 +3,14 @@ module apps.retail.controllers.pages.error;
 import apps.retail;
 @safe:
 
-class DRETAILErrorPageController : DAPPPageController {
-  mixin(ControllerThis!("RETAILErrorPageController"));
+class DRTLErrorPageController : DAPPPageController {
+  mixin(ControllerThis!("RTLErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(RETAILErrorView(this));
+      .view(RTLErrorView(this));
   }
 }
-mixin(ControllerCalls!("RETAILErrorPageController"));
+mixin(ControllerCalls!("RTLErrorPageController"));

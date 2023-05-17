@@ -3,15 +3,15 @@ module apps.retail.views.error;
 import apps.retail;
 @safe:
 
-class DRETAILErrorView : DView {
-  mixin(ViewThis!("RETAILErrorView"));
+class DRTLErrorView : DView {
+  mixin(ViewThis!("RTLErrorView"));
 
   override void beforeH5(STRINGAA options = null) {
     super.beforeH5(options);
   }
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DRETAILErrorView~":DRETAILErrorView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DRTLErrorView~":DRTLErrorView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -19,4 +19,4 @@ class DRETAILErrorView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("RETAILErrorView"));
+mixin(ViewCalls!("RTLErrorView"));
