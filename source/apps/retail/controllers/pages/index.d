@@ -1,16 +1,16 @@
-module apps.myname.controllers.pages.index;
+module apps.retail.controllers.pages.index;
 
-import apps.myname;
+import apps.retail;
 @safe:
 
-class DMYNAMEIndexPageController : DAPPPageController {
-  mixin(ControllerThis!("MYNAMEIndexPageController"));
+class DRETAILIndexPageController : DAPPPageController {
+  mixin(ControllerThis!("RETAILIndexPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
     super.initialize(configSettings);
 
     this
-      .view(MYNAMEIndexView(this));
+      .view(RETAILIndexView(this));
   }
 }
-mixin(ControllerCalls!("MYNAMEIndexPageController"));
+mixin(ControllerCalls!("RETAILIndexPageController"));

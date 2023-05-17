@@ -8,7 +8,7 @@ public { // required uim libraries
   import uim.apps;
 }
 
-public { // admin-myname libraries
+public { // admin-retail libraries
   import apps.retail.controllers;
   import apps.retail.views;
 }
