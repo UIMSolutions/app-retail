@@ -25,11 +25,11 @@ public {
   import apps.retail.views;
 }
 
-DApp retailApp;
 static this() {
-  retailApp = App
+  AppRegistry.register("apps.retail",  
+    App
     .name("retailApp")
     .rootPath("/apps/retail")
     .addRoute(Route("", HTTPMethod.GET, RTLIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, RTLIndexPageController));
+    .addRoute(Route("/", HTTPMethod.GET, RTLIndexPageController)));
 }
