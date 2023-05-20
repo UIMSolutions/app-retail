@@ -3,11 +3,11 @@ module apps.retail.views.index;
 import apps.retail;
 @safe:
 
-class DRTLIndexView : DView {
-  mixin(ViewThis!("RTLIndexView"));
+class DIndexView : DView {
+  mixin(ViewThis!("IndexView"));
 
   override DH5Obj[] toH5(STRINGAA options = null) {
-    debugMethodCall(moduleName!DRTLIndexView~":DRTLIndexView("~this.name~")::toH5");
+    debugMethodCall(moduleName!DIndexView~":DIndexView("~this.name~")::toH5");
     super.toH5(options);
 
     return [
@@ -15,4 +15,4 @@ class DRTLIndexView : DView {
     ].toH5;
   }
 }
-mixin(ViewCalls!("RTLIndexView"));
+mixin(ViewCalls!("IndexView"));

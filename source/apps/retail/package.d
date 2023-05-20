@@ -30,6 +30,6 @@ static this() {
     App
     .name("retailApp")
     .rootPath("/apps/retail")
-    .addRoute(Route("", HTTPMethod.GET, RTLIndexPageController))
-    .addRoute(Route("/", HTTPMethod.GET, RTLIndexPageController)));
+    .addRoute(Route("", HTTPMethod.GET, IndexPageController))
+    .addRoute(Route("/", HTTPMethod.GET, IndexPageController)));
 }
