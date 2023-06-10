@@ -3,7 +3,7 @@ module apps.retail.controllers.pages.error;
 import apps.retail;
 @safe:
 
-class DRTLErrorPageController : DAPPPageController {
+class DRTLErrorPageController : DPageController {
   mixin(ControllerThis!("RTLErrorPageController"));
 
   override void initialize(Json configSettings = Json(null)) {
