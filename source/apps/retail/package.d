@@ -27,7 +27,7 @@ public {
 
 static this() {
   AppRegistry.register("apps.retail",  
-    App("retailApp", "/apps/retail")
+    App("retailApp", "apps/retail")
       .addRoutes(
         Route("", HTTPMethod.GET, IndexPageController),
         Route("/", HTTPMethod.GET, IndexPageController)
