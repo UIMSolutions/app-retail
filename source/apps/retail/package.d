@@ -2,8 +2,10 @@ module apps.retail;
 
 mixin(ImportPhobos!());
 
-// Dub
-public import vibe.d;
+// External
+public {
+  import vibe.d;
+}
 
 // UIM
 public import uim.core;
@@ -26,11 +28,21 @@ public {
 }
 
 static this() {
-  AppRegistry.register("apps.retail",  
-    App("retailApp", "apps/retail")
-      .addRoutes(
-        Route("", HTTPMethod.GET, IndexPageController),
-        Route("/", HTTPMethod.GET, IndexPageController)
-      )
+  // Create App
+  auto myApp = App("retailApp", "apps/retail");
+  
+  // Customize App
+  with (myApp) {
+    importTranslations();
+    addControllers([
+      "retail.index": IndexPageController
+    ]);
+    addRoutes(
+      Route("", HTTPMethod.GET, controller("retail.index")),
+      Route("/", HTTPMethod.GET, controller("retail.index"))
     );
+  }
+
+  // Register app
+  AppRegistry.register("apps.retail", myApp);
 }
